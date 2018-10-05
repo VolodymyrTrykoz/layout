@@ -1,0 +1,68 @@
+doctype html
+html(lang='en')
+    head
+        title title
+        link(rel='stylesheet', href='./css/main.min.css')
+    body
+        .container
+            section.wrapper
+                .menu
+                    h3.menu__title CRM
+                    ul.menu__list
+                        li.menu__item
+                            a(class='menu__link' href="#")
+                                img.menu__img(src="./img/dashboard.png" alt="dash")
+                                | Dashboard
+                        li.menu__item
+                            a(class='menu__link' href="#")
+                                img.menu__img(src="./img/reports.png" alt="reporst")
+                                | Reports
+                        li.menu__item
+                            a(class='menu__link' href="#")
+                                img.menu__img(src="./img/customers.png" alt="customers")
+                                | Customers
+                        li.menu__item
+                            a(class='menu__link' href="#")
+                                img.menu__img(src="./img/calendar.png" alt="calendar")
+                                | Calendar
+                .info
+                    .info__head
+                        .info__customer
+                            .title Customers
+                            .name Max Jones
+                        .info__search
+                            form#form.form(action="s.html" method="get" target="")
+                                input(type="text" name="q" class="form__input" autocomplete="off" placeholder="SEARCH")
+                                button(type="submit" class="form__btn")
+                        .info__notification
+                            a(href="#")
+                                img.bell(src="./img/bell.png" alt="bell")
+                                .counter 4
+                        .info__support
+                            img.operator(src="./img/woman.png" alt="woman")
+                            .name Hello Lauren
+                    .info__person
+                        .img
+                            img(src="./img/man.png" alt="man")
+                        .data
+                            .data__name
+                                .name MAX JONES
+                                .status GOLD
+                            .data__job Sales & Marketing
+                            .data__contacts
+                                .phone
+                                    p.title PHONE
+                                    a(href="tel:+31140175468") (+31) 140 175 468
+                                .address
+                                    p.title    ADDRESS
+                                    | Binnenweg 50, Rotterdam
+                                button.btn CREATE QUOTE
+                    .info__history
+                        a.item(href="#") OVERVIEW
+                        a.item(href="#") ORDERS
+                        a.item(href="#") PAYMENTS
+                    .info__other
+        script(src='./js/scripts.min.js')
+
+
+

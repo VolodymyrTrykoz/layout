@@ -1,0 +1,34 @@
+
+$blue: #442a9d
+$gold: #ffc12d
+$darkGray: #303841
+// placeholders
+
+%transition
+  transition: 0.2s linear
+
+// extends
+%vam
+  top: 50%
+  transform: translateY(-50%)
+
+%ham
+  left: 50%
+  transform: translateX(-50%)
+
+%centering
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+%relative
+  position: relative
+
+
+
+@function get-vw($object)
+  $vw: (1920 * 0.01) * 1px
+  @return ($object / $vw) * 1vw
+
+
+
